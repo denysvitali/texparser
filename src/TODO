@@ -6,6 +6,6 @@ Check for listings package
 
 Check for erroneous use of \\ instead of paragraph break
 
-Add aux parser
+Add com.dickimawbooks.texparserlib.aux parser
 
 Lots of other stuff!

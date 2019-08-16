@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+
+    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
+    implementation 'com.google.guava:guava:27.1-jre'
+    compile project(':lib')
+
+    implementation 'javax.help:javahelp:2.0.05'
+
+    // Use JUnit Jupiter API for testing.
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.2'
+
+    // Use JUnit Jupiter Engine for testing.
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
+}
+
+test {
+    // Use junit platform for unit tests
+    useJUnitPlatform()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'main'
+        }
+
+        resources {
+            srcDir 'resources'
+        }
+    }
+}

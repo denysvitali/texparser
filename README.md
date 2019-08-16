@@ -20,7 +20,7 @@ Since TeX4HT no longer works with the `jmlrbook` class, I started to
 extend the TeX parsing code so that it could convert the article
 abstracts to HTML without requiring TeX4HT. This aspect is no
 longer required as JMLR W&amp;CP now generate the HTML files from the
-`.bib` file associated with the proceedings, but the `html` part of the
+`.com.dickimawbooks.texparserlib.bib` file associated with the proceedings, but the `com.dickimawbooks.texparserlib.html` part of the
 TeX parser library allows the translation of code fragments, such as 
 author name or article title, so it can be rendered in Java's
 `HTMLDocument`, which makes the GUI look a bit tidier.
@@ -28,7 +28,7 @@ author name or article title, so it can be rendered in Java's
 Since I have other Java applications (for example,
 [`datatooltk`](https://github.com/nlct/datatooltk) and
 [`bib2gls`](https://github.com/nlct/bib2gls)) that also need to
-parse LaTeX files or their associated `.aux` or `.bib` files, I
+parse LaTeX files or their associated `.com.dickimawbooks.texparserlib.aux` or `.com.dickimawbooks.texparserlib.bib` files, I
 decided to split away the TeX parsing code from MakeJmlBookGui into
 a separate library, namely `texparserlib.jar`. This also makes it
 easier to test the library without the additional overhead of the
@@ -55,12 +55,12 @@ general use.
 
 Syntax:
 
-`texparserapp` [`--html`] `--in` &lt;*tex file*&gt; `--output` &lt;*out dir*&gt;
+`texparserapp` [`--com.dickimawbooks.texparserlib.html`] `--in` &lt;*tex file*&gt; `--output` &lt;*out dir*&gt;
 
 This parses &lt;*tex file*&gt; and saves the new file in &lt;*out dir*&gt; and
 copies over any included images. It will run `epstopdf` on any eps
 files and `wmf2eps` on any wps files. Both `epstopdf` and `wmf2eps` must
-be on your system path. The `--html` switch indicates conversion to
+be on your system path. The `--com.dickimawbooks.texparserlib.html` switch indicates conversion to
 HTML. If this switch is omitted, LaTeX to LaTeX conversion is
 assumed.
 
@@ -126,7 +126,7 @@ abstracts to HTML. Images aren't supported. MathJax is used to
 render math mode.
 ```bash
 cd src/tests
-texparserapp --in test-article/test-article.tex --output output/test-article --html
+texparserapp --in test-article/test-article.tex --output output/test-article --com.dickimawbooks.texparserlib.html
 ```
 The `bib2gls` application uses the HTML conversion without MathJax
 when trying to interpret the sort value when the `sort` field is

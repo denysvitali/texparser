@@ -32,25 +32,17 @@ public class TeXParserAppMessages extends Hashtable<String,MessageFormat>
     {
        super(props.isEmpty() ? 10 : props.size());
 
-       Iterator<Object> it = props.keySet().iterator();
-
-       while (it.hasNext())
-       {
-          Object key = it.next();
-
-          try
-          {
-             put((String)key, new MessageFormat((String)props.get(key)));
-          }
-          catch (IllegalArgumentException e)
-          {
-             throw new InvalidSyntaxException(
-              String.format(
-               "Property '%s': Invalid message format: %s", 
-               key, e.getMessage()),
-              e);
-          }
-       }
+        for (Object key : props.keySet()) {
+            try {
+                put((String) key, new MessageFormat((String) props.get(key)));
+            } catch (IllegalArgumentException e) {
+                throw new InvalidSyntaxException(
+                        String.format(
+                                "Property '%s': Invalid message format: %s",
+                                key, e.getMessage()),
+                        e);
+            }
+        }
     }
 
     public String getMessageIfExists(String label, Object... args)

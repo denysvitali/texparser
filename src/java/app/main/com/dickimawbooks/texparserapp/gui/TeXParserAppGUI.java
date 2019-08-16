@@ -18,7 +18,6 @@
 */
 package com.dickimawbooks.texparserapp.gui;
 
-import java.awt.*;
 import java.io.*;
 import java.net.URL;
 import java.awt.event.*;

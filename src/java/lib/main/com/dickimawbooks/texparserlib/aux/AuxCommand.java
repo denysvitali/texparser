@@ -31,7 +31,7 @@ import com.dickimawbooks.texparserlib.*;
 import com.dickimawbooks.texparserlib.generic.*;
 
 /**
- * Commands used in aux files.
+ * Commands used in com.dickimawbooks.texparserlib.aux files.
  */
 
 public class AuxCommand extends ControlSequence

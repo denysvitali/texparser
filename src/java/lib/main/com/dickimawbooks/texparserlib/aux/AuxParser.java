@@ -16,7 +16,7 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
-package com.dickimawbooks.texparserlib.bib;
+package com.dickimawbooks.texparserlib.aux;
 
 import java.io.IOException;
 import java.io.EOFException;
@@ -30,44 +30,32 @@ import java.nio.charset.Charset;
 
 import com.dickimawbooks.texparserlib.*;
 import com.dickimawbooks.texparserlib.generic.*;
+import com.dickimawbooks.texparserlib.latex.NewCommand;
+import com.dickimawbooks.texparserlib.latex.Input;
 
 /**
- * Parses bib files
+ * Parses com.dickimawbooks.texparserlib.aux files
  */
 
-public class BibParser extends DefaultTeXParserListener
+public class AuxParser extends DefaultTeXParserListener
   implements Writeable
 {
-   public BibParser(TeXApp texApp)
+   public AuxParser(TeXApp texApp)
      throws IOException
    {
-      this(texApp, null, true);
+      this(texApp, null);
    }
 
-   public BibParser(TeXApp texApp, boolean maketildeother)
-     throws IOException
-   {
-      this(texApp, null, maketildeother);
-   }
-
-   public BibParser(TeXApp texApp, Charset charset)
-     throws IOException
-   {
-      this(texApp, charset, true);
-   }
-
-   public BibParser(TeXApp texApp, Charset charset, 
-     boolean maketildeother)
+   public AuxParser(TeXApp texApp, Charset charset)
      throws IOException
    {
       super(null);
       this.texApp = texApp;
       this.charset = charset;
-      this.maketildeother = maketildeother;
 
       setWriteable(this);
 
-      bibData = new Vector<BibData>();
+      auxData = new Vector<AuxData>();
    }
 
    public TeXApp getTeXApp()
@@ -75,13 +63,13 @@ public class BibParser extends DefaultTeXParserListener
       return texApp;
    }
 
-   public TeXParser parseBibFile(File bibFile)
+   public TeXParser parseAuxFile(File auxFile)
      throws IOException
    {
-      return parseBibFile(bibFile, null);
+      return parseAuxFile(auxFile, null);
    }
 
-   public TeXParser parseBibFile(File bibFile, Charset charset)
+   public TeXParser parseAuxFile(File auxFile, Charset charset)
      throws IOException
    {
       if (charset != null)
@@ -91,43 +79,42 @@ public class BibParser extends DefaultTeXParserListener
 
       TeXParser parser = new TeXParser(this);
 
-      int atcode = parser.getCatCode('@');
-      int hashcode = parser.getCatCode('#');
-      int tildecode = TeXParser.TYPE_ACTIVE;
-
-      if (maketildeother)
-      {
-         tildecode = parser.getCatCode('~');
-      }
-
-      parser.setCatCode('@', TeXParser.TYPE_ACTIVE);
-      parser.setCatCode('#', TeXParser.TYPE_OTHER);
-
-      if (maketildeother)
-      {
-         parser.setCatCode('~', TeXParser.TYPE_OTHER);
-      }
-
-      parser.parse(bibFile, charset);
-      parser.setCatCode('@', atcode);
-      parser.setCatCode('#', hashcode);
-
-      if (maketildeother)
-      {
-         parser.setCatCode('~', tildecode);
-      }
+      int code = parser.getCatCode('@');
+      parser.setCatCode('@', TeXParser.TYPE_LETTER);
+      parser.parse(auxFile);
+      parser.setCatCode('@', code);
 
       return parser;
    }
 
    protected void addPredefined()
    {
-      parser.putActiveChar(new At());
+      super.addPredefined();
 
-      if (!maketildeother)
-      {
-         parser.putActiveChar(new Nbsp());
-      }
+      putControlSequence(new Input("@input", Input.NOT_FOUND_ACTION_WARN));
+
+      addAuxCommand("newlabel", 2);
+      addAuxCommand("bibstyle", 1);
+      addAuxCommand("citation", 1);
+      addAuxCommand("bibdata", 1);
+      addAuxCommand("bibcite", 2);
+
+      putControlSequence(new AuxIgnoreable("providecommand", true,
+       new boolean[] {true, false, true}));
+   }
+
+   public void addAuxCommand(String name, int numArgs)
+   {
+      putControlSequence(new AuxCommand(name, numArgs));
+   }
+
+   public ControlSequence getControlSequence(String name)
+   {
+      ControlSequence cs = super.getControlSequence(name);
+
+      return (cs instanceof Input || cs instanceof AuxCommand 
+              || cs instanceof AuxIgnoreable) ? cs 
+        : new AuxIgnoreable(name);
    }
 
    public Writeable getWriteable()
@@ -206,42 +193,29 @@ public class BibParser extends DefaultTeXParserListener
       }
    }
 
-   public void addBibData(BibData data)
+   public void addAuxData(AuxData data)
    {
-      bibData.add(data);
+      auxData.add(data);
    }
 
-   public BibEntry getBibEntry(String id)
+   public Vector<AuxData> getAuxData(String name)
    {
-      for (BibData data : bibData)
+      Vector<AuxData> list = new Vector<AuxData>();
+
+      for (AuxData data : auxData)
       {
-         if (data instanceof BibEntry 
-          && ((BibEntry)data).getId().equals(id))
+         if (data.getName().equals(name))
          {
-            return (BibEntry)data;
+            list.add(data);
          }
       }
 
-      return null;
+      return list;
    }
 
-   public BibString getBibString(String key)
+   public Vector<AuxData> getAuxData()
    {
-      for (BibData data : bibData)
-      {
-         if (data instanceof BibString 
-          && ((BibString)data).getKey().equals(key))
-         {
-            return (BibString)data;
-         }
-      }
-
-      return null;
-   }
-
-   public Vector<BibData> getBibData()
-   {
-      return bibData;
+      return auxData;
    }
 
    public Charset getCharSet()
@@ -249,12 +223,7 @@ public class BibParser extends DefaultTeXParserListener
       return charset;
    }
 
-   public void setCharSet(Charset charset)
-   {
-      this.charset = charset;
-   }
-
-   // shouldn't be needed in bibFile
+   // shouldn't be needed in auxFile
    public float emToPt(float emValue)
    {
       getTeXApp().warning(getParser(),
@@ -263,7 +232,7 @@ public class BibParser extends DefaultTeXParserListener
       return 9.5f*emValue;
    }
 
-   // shouldn't be needed in bibFile
+   // shouldn't be needed in auxFile
    public float exToPt(float exValue)
    {
       getTeXApp().warning(getParser(),
@@ -272,10 +241,8 @@ public class BibParser extends DefaultTeXParserListener
       return 4.4f*exValue;
    }
 
-   private Vector<BibData> bibData;
+   private Vector<AuxData> auxData;
    private TeXApp texApp;
 
    private Charset charset=null;
-
-   protected boolean maketildeother=true;
 }

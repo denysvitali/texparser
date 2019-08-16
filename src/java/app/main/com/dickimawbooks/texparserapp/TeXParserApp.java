@@ -19,29 +19,26 @@
 
 package com.dickimawbooks.texparserapp;
 
-import java.util.Properties;
-import java.util.Vector;
-import java.util.Map;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-import java.text.MessageFormat;
+import com.dickimawbooks.texparserapp.gui.TeXParserAppGUI;
+import com.dickimawbooks.texparserapp.gui.TeXParserAppGuiResources;
+import com.dickimawbooks.texparserapp.io.*;
+import com.dickimawbooks.texparserlib.*;
+import com.dickimawbooks.texparserlib.html.L2HConverter;
+import com.dickimawbooks.texparserlib.html.L2HImage;
+import com.dickimawbooks.texparserlib.latex2latex.LaTeX2LaTeX;
+
+import java.awt.*;
 import java.io.*;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.FileSystems;
-import java.nio.file.Path;
 import java.nio.charset.Charset;
-import java.awt.Dimension;
-
-import com.dickimawbooks.texparserlib.*;
-import com.dickimawbooks.texparserlib.plain.*;
-import com.dickimawbooks.texparserlib.generic.*;
-import com.dickimawbooks.texparserlib.latex.*;
-import com.dickimawbooks.texparserlib.latex2latex.*;
-import com.dickimawbooks.texparserlib.html.*;
-
-import com.dickimawbooks.texparserapp.gui.*;
-import com.dickimawbooks.texparserapp.io.*;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Vector;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class TeXParserApp implements TeXApp
 {
@@ -1003,8 +1000,8 @@ public class TeXParserApp implements TeXApp
       System.out.println(getMessage("syntax.output.options"));
       System.out.println();
       System.out.println(getMessage("syntax.out", "--output", "-o"));
-      System.out.println(getMessage("syntax.latex", "--latex"));
-      System.out.println(getMessage("syntax.html", "--html"));
+      System.out.println(getMessage("syntax.latex", "--com.dickimawbooks.texparserlib.latex"));
+      System.out.println(getMessage("syntax.html", "--com.dickimawbooks.texparserlib.html"));
       System.out.println(getMessage("syntax.out.charset", "--out-charset"));
       System.out.println();
       System.out.println(getMessage("syntax.html.options"));
@@ -1103,7 +1100,7 @@ public class TeXParserApp implements TeXApp
       try
       {
          String dict = String.format("%s-%s.xml",
-            settings.getDictionaryLocation(),
+            TeXParserAppSettings.getDictionaryLocation(),
             dictLanguage);
 
          URL url = getClass().getResource(dict);
@@ -1296,11 +1293,11 @@ public class TeXParserApp implements TeXApp
          {
             guiMode = false;
          }
-         else if (args[i].equals("--latex"))
+         else if (args[i].equals("--com.dickimawbooks.texparserlib.latex"))
          {
             outputFormat = "latex";
          }
-         else if (args[i].equals("--html"))
+         else if (args[i].equals("--com.dickimawbooks.texparserlib.html"))
          {
             outputFormat = "html";
          }

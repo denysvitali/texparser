@@ -292,7 +292,7 @@ public class TeXParserAppSettings extends Properties
          case STARTUP_HOME:
             return new File(System.getProperty("user.home"));
          case STARTUP_CWD:
-            return new File(".");
+            return new File("");
       }
 
       String name = getProperty("startupdir");
@@ -551,8 +551,8 @@ public class TeXParserAppSettings extends Properties
    public static final int STARTUP_LAST   = 2;
    public static final int STARTUP_CUSTOM = 3;
 
-   public static final String HELPSET_DIR = "/resources/helpsets/";
-   public static final String DICT_DIR = "/resources/dictionaries/";
+   public static final String HELPSET_DIR = "/helpsets/";
+   public static final String DICT_DIR = "/dictionaries/";
 
    public static final String RESOURCE = "texparserapp";
 

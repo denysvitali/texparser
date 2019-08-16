@@ -1,4 +1,4 @@
-*.aux
+*.com.dickimawbooks.texparserlib.aux
 *.log
 *.pdf
 *.toc

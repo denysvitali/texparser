@@ -11,7 +11,7 @@ version.tex	:
 	echo "\\version{$(APP_VERSION)}" > version.tex
 
 clean	:
-	\rm -f texparser.{aux,log,out,toc,lof,lot,gls,glg,glo,acn,acr,alg,ist}
+	\rm -f texparser.{com.dickimawbooks.texparserlib.aux,log,out,toc,lof,lot,gls,glg,glo,acn,acr,alg,ist}
 
 squeaky	:
 	\rm -f texparser.pdf

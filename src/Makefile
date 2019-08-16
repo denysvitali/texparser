@@ -22,31 +22,31 @@ test-sw	: app tests/output
 
 test-abs : app tests/output
 	rm -f -r tests/output/test-abs
-	bin/texparserapp --debug --in tests/test-abs/test-abs.tex --output tests/output/test-abs --html
+	bin/texparserapp --debug --in tests/test-abs/test-abs.tex --output tests/output/test-abs --com.dickimawbooks.texparserlib.html
 
 test-article : app tests/output
 	rm -f -r tests/output/test-article
-	bin/texparserapp --debug --in tests/test-article/test-article.tex --output tests/output/test-article --html
+	bin/texparserapp --debug --in tests/test-article/test-article.tex --output tests/output/test-article --com.dickimawbooks.texparserlib.html
 
 test-jmlrutils : app tests/output
 	rm -f -r tests/output/test-jmlrutils
-	bin/texparserapp --debug --in tests/test-jmlrutils/test-jmlrutils.tex --output tests/output/test-jmlrutils --html
+	bin/texparserapp --debug --in tests/test-jmlrutils/test-jmlrutils.tex --output tests/output/test-jmlrutils --com.dickimawbooks.texparserlib.html
 
 test-doc : app tests/output
 	rm -f -r tests/output/test-doc
-	bin/texparserapp --in tests/test-doc/test-doc.tex --output tests/output/test-doc --html
+	bin/texparserapp --in tests/test-doc/test-doc.tex --output tests/output/test-doc --com.dickimawbooks.texparserlib.html
 
 test-probsoln : app tests/output
 	rm -f -r tests/output/test-probsoln
-	bin/texparserapp --debug --in tests/test-probsoln/test-probsoln.tex --output tests/output/test-probsoln --html
+	bin/texparserapp --debug --in tests/test-probsoln/test-probsoln.tex --output tests/output/test-probsoln --com.dickimawbooks.texparserlib.html
 
 test-lists : app tests/output
 	rm -f -r tests/output/test-lists
-	bin/texparserapp --in tests/test-lists/test-lists.tex --output tests/output/test-lists --html
+	bin/texparserapp --in tests/test-lists/test-lists.tex --output tests/output/test-lists --com.dickimawbooks.texparserlib.html
 
 test-datatool : app tests/output
 	rm -f -r tests/output/test-datatool
-	bin/texparserapp --debug --in tests/test-datatool/test-datatool.tex --output tests/output/test-datatool --html
+	bin/texparserapp --debug --in tests/test-datatool/test-datatool.tex --output tests/output/test-datatool --com.dickimawbooks.texparserlib.html
 
 test-jmlr	: app tests/output
 	rm -f -r tests/output/test-jmlr
@@ -54,7 +54,7 @@ test-jmlr	: app tests/output
 
 test-mkimages : app tests/output
 	rm -f -r tests/output/test-mkimages
-	bin/texparserapp --debug --in tests/test-mkimages/test-mkimages.tex --output tests/output/test-mkimages --html
+	bin/texparserapp --debug --in tests/test-mkimages/test-mkimages.tex --output tests/output/test-mkimages --com.dickimawbooks.texparserlib.html
 
 app     : lib lib/texparserlib.jar lib/texparserapp.jar \
 	  lib/resources lib/texparser-splash.png \

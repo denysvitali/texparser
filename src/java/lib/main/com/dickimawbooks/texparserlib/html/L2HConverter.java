@@ -781,11 +781,11 @@ public class L2HConverter extends LaTeXParserListener
       super.documentclass(options, clsName, loadParentOptions);
 
       writeable.writeln("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">");
-      writeable.writeln("<html>");
+      writeable.writeln("<com.dickimawbooks.texparserlib.html>");
       writeable.writeln("<head>");
 
       writeable.writeln(String.format(
-       "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=%s\">", 
+       "<meta http-equiv=\"Content-Type\" content=\"text/com.dickimawbooks.texparserlib.html; charset=%s\">",
        htmlCharSet == null ? 
          Charset.defaultCharset().name() : 
          htmlCharSet.name()));
@@ -886,7 +886,7 @@ public class L2HConverter extends LaTeXParserListener
       }
 
       writeable.writeln("</body>");
-      writeable.writeln("</html>");
+      writeable.writeln("</com.dickimawbooks.texparserlib.html>");
 
       throw new EOFException();
    }

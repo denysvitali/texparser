@@ -12,7 +12,7 @@
         <appname>@{info.appName}</appname>
         <appversion>@{project.version}</appversion>
         <authors>
-            <author name="Nicola L. C. Talbot" email="http://www.dickimaw-books.com/contact.html"/>
+            <author name="Nicola L. C. Talbot" email="http://www.dickimaw-books.com/contact.com.dickimawbooks.texparserlib.html"/>
         </authors>
         <url>@{info.url}</url>
         <javaversion>1.7</javaversion>

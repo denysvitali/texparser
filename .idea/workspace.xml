@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="112f43a2-417e-4776-b0ac-00f93a7fa5a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/texparser-installer.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/texparser-src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/texparser.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/src/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/doc/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/doc/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/doc/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/src/doc/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/doc/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/doc/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/installer/install.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/installer/install.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/ErrorListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/Manifest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/TeXParserApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/TeXParserAppMessages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/TeXParserAppSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/gui/ErrorPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/gui/ItemButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/gui/ScrollToolBar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/gui/TeXParserAppGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/gui/TeXParserAppGuiResources.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/icons/template.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/io/CancelledException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/io/DefaultProcessListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/io/InterruptTimerTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/io/InvalidSyntaxException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/io/KpsewhichListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/io/ProcessFailedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/io/ProcessInputReaderThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/app/io/ProcessListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/ActiveChar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/AssignedActiveChar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/AssignedControlSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/AssignedMacro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/BgChar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/CaseChangeable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/CatCodeChanger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/CatCodeList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/CharObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/ControlSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/CountRegister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Declaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/DimenRegister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/DoubleParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/EgChar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/EmUnit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/EndDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Eol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/ExUnit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Expandable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/FillUnit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/FixedUnit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/FontEncoding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/GenericCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Group.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Ignoreable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Letter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Macro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/MathBg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/MathEg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/MathGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/MidControlSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/MuUnit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/NumericExpansion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/NumericRegister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Numerical.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Other.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Par.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Param.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/ParameterToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/PercentUnit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Register.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/SbChar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/SkippedEols.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/SkippedSpaces.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/SpChar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Space.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/SpecialListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/StackMarker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Tab.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXAppAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXBoolean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXCellAlign.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXCellAlignList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXCsRef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXDimension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXGlue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXObjectList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXParserListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXSyntaxException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TeXUnit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/TokenRegister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/UserBoolean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/UserDimension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/UserNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/WhiteSpace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/Writeable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/aux/AuxCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/aux/AuxData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/aux/AuxIgnoreable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/aux/AuxParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/AbbrvContributorFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/At.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/BibComment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/BibData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/BibEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/BibNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/BibParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/BibPreamble.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/BibString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/BibTeXSyntaxException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/BibUserString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/BibValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/BibValueList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/BibVariable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/Contributor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/ContributorFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/EtAl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/PlainContributorFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/bib/StringConcat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/Accent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/BigOperator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/BinarySymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/DefaultTeXParserListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/DelimiterSymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/DoubleLetterAccent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/EncodingSymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/GreekSymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/LoopCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/MathAccent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/MathSymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/Nbsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/NewCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/NewDimen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/NewToks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/ParAlign.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/ParCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/SpaceCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/generic/Symbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/HCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/HtmlTag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HAbstract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HAlignRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HAmp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HAtMakeCaption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HBibItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HBigOperator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HCaption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HContentsLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HDescriptionItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HDescriptionLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HEqnarray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HFloat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HFontFamilyDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HFontShapeDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HFontSizeDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HFontWeightDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HHyperlink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HHypertarget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HLetter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HMaketitle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HMathAlignNewline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HMathAlignRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HMathDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HMathGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HMathSymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HNoBreakSpace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HNormalFont.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HNumberline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HOther.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HPar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HSection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HStringConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HTableOfContents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HTabular.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HTextSubscript.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HTextSuperscript.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HTheBibliography.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HToImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2HUndefined.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/html/L2Hhfill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AbstractDec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AddContentsLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AddToHook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AlignRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AlignSpan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Appendix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AtAlph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AtFirstOfOne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AtFirstOfTwo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AtFnSymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AtFor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AtGobble.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AtGobbleTwo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AtIfClassLoaded.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AtIfNextChar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AtIfPackageLoaded.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AtNameUse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AtRoman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/AtSecondOfTwo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Begin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/BibItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Bibliography.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/BibliographyStyle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Centerline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Cite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Cline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ContentsLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Cr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/CsvList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/DeclareOption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/DescriptionDec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/DescriptionItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/DocumentClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/DocumentStyle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/End.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/EnsureMath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/EnumerateDec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ExecuteOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/FontFamilyDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/FontShapeDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/FontSizeDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/FontWeightDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Footnote.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Frac.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/FrameBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/GatherEnvContents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/GenericError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Hline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/IfFileExists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/IgnoreOargMarg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Ignorespaces.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Index.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/IndexEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/IndexLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/IndexRoot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Input.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/InputIfFileExists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ItemizeDec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/KeyValList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/LaTeXCls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/LaTeXFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/LaTeXFloat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/LaTeXGenericCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/LaTeXParserListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/LaTeXSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/LaTeXSyntaxException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Label.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ListDec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ListItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/LoadDocumentClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/MBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/MakeAtLetter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/MakeAtOther.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/MakeIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Maketitle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/MarginPar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/MathDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/MathFontCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/MissingValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/MultiCell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/MultiColumn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/NameRef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/NewCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Obsolete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/PackageError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/PageRef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ParBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/PassOptionsToPackage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/PreambleParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ProcessOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Protect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ProvidesFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ProvidesPackage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Ref.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Section.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/SkipEnvContents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/StoreDataCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/SwitchMarginSide.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/SymbolCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Tabular.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/TabularNewline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/TextBlockCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Thanks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/TheBibliography.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Today.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/TrivListDec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/UnknownCls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/UnknownReference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/UnknownSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/UseCounter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/UsePackage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Verb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/Verbatim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/amsmath/Align.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/amsmath/AmsSymbSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/amsmath/AmsmathSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/booktabs/BKTrule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/booktabs/BooktabsSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/BPChem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/BpAlpha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/BpBeta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/BpChemSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/BpDelta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/CNlabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/CNlabelnoref.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/CNlabelsub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/CNlabelsubnoref.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/CNref.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/CNrefsub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/Cis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/Cnmr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/Dreh.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/Hapto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/Hnmr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/Iupac.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/TheBPCno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/TheBPCnoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/bpchem/Trans.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/color/ColorDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/color/ColorSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/color/DefineColor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLaddcolumn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLandname.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLcleardb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLcolumncount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLcompare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLdeletedb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLfetchlistelement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLforeach.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLformatlist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLifDbEmpty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLifDbExists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLifinlist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLifintclosedbetween.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLifintopenbetween.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLinsertinto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLlistelement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLloaddb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLloaddbtex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLmessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLnewcurrencysymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLnewdb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLnewdbentry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLnewrow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLnumitemsinlist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLrowcount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLsetExpansion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLsetdefaultcurrency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLsetdelimiter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLsetseparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DTLsettabseparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataCurrencyElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataIntElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataNumericElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataRealElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataStringElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataToolBaseSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataToolEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataToolEntryRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataToolHeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataToolHeaderRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataToolRows.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/datatool/DataToolSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/etoolbox/CsDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/etoolbox/CsLetCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/etoolbox/EtoolboxSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/etoolbox/IfDefEmpty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/etoolbox/IfDefString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/etoolbox/PreTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/etoolbox/Undef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/fontenc/FontEncSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/fontenc/FontEncodingCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/fontenc/T2AEncoding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/fontenc/T2BEncoding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/fontenc/T2CEncoding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/fourier/FourierSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/glossaries/GlossariesSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/glossaries/Glossary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/glossaries/GlossaryEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/glossaries/NewGlossaryEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/graphics/Epsfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/graphics/GraphicsPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/graphics/GraphicsSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/graphics/IncludeGraphics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/graphics/ReflectBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/graphics/ResizeBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/graphics/RotateBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/graphics/ScaleBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/hyperref/Href.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/hyperref/HyperrefSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/hyperref/NoLinkUrl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/hyperref/Url.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ifthen/BeginConditionGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ifthen/BinaryConditionalOperator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ifthen/ConditionGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ifthen/EndConditionGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ifthen/IFand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ifthen/IFisodd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ifthen/IFnot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ifthen/IFor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ifthen/IfThenElse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ifthen/IfThenSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/ifthen/UnaryConditionalOperator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/inputenc/InputEncSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/inputenc/InputEncoding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/AtJmlrIfGraphicxLoaded.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/FloatConts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/Jmlr2eName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/Jmlr2eSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrAddr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrBookCls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrCls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrEmail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrKeywords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrNewTheorem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrObjectRef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrObjectTypeRef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrProceedings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrSubFloatRef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrTheorem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrUtilsSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/JmlrVec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/ObsoleteFontCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/Proof.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/SubFloat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/jmlr/SubFloatLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/lipsum/Lipsum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/lipsum/LipsumSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/lipsum/SetLipsumDefault.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/mfirstuc/CapitaliseFmtWords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/mfirstuc/CapitaliseWords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/mfirstuc/GlsMakeFirstUc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/mfirstuc/MFUnocap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/mfirstuc/MakeFirstUc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/mfirstuc/MfirstucEnglishSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/mfirstuc/MfirstucSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/mhchem/Ce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/mhchem/MhchemSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/mnsymbol/MnSymbolSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/natbib/Citep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/natbib/Citet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/natbib/NatbibSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/pifont/Ding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/pifont/DingList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/pifont/PifontSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/DefProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/ForEachProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/LoadAllProblems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/LoadExceptProblems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/LoadRandomExcept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/LoadRandomProblems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/LoadSelectedProblems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/NewProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/OnlyProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/OnlySolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/ProbSolnData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/ProbSolnDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/ProbSolnException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/ProbSolnSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/Question.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/RandSeed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/TextEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/probsoln/UseProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/shortvrb/DeleteShortVerb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/shortvrb/DocSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/shortvrb/MakeShortVerb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/shortvrb/ShortVrbSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/shortvrb/VerbChar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/siunitx/SIPrefixCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/siunitx/SIUnitCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/siunitx/SIunitxSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/siunitx/Si.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/siunitx/SiPer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/siunitx/SiPower.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/stix/StixSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/BF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/NEG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/QABOVE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/QATOP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/QATOPD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/QDABOVE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/QDATOP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/QDATOPD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/QDOVERD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/QOVERD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/QTABOVE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/QTATOP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/QTATOPD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/QTOVERD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/Qcb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/SWFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tcilatex/SWSpecialListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/textcase/MakeTextChangeCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/textcase/MakeTextLowercase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/textcase/MakeTextUppercase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/textcase/NoCaseChange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/textcase/TextCaseSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/textcomp/TextCompSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tipa/T3Encoding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tipa/TipaEncoding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/tipa/TipaSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/upgreek/UpGreekSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/wasysym/WasysymSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/xfor/XforSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/xspace/Xspace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex/xspace/XspaceSty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LActiveChar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LBegin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LBibliography.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LBigOperator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LBinarySymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LComment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LControlSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LDoubleParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LEnd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LEol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LGreekSymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LIgnoreable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LMathDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LMathFontCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LMathGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LMathSymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LOther.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LPar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LSkippedEols.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LSkippedSpaces.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LSpace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LSymbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LTab.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/L2LVerbatim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/latex2latex/LaTeX2LaTeX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/plain/Bye.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/plain/Input.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/plain/PlainTeXParserListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Above.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/AboveWithDelims.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Advance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/AfterGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/BeginGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/CatCodeCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/CharCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/ControlSpace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Csname.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Def.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Detokenize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/DiscretionaryHyphen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/DisplayStyle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Divide.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Else.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/EndCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/EndCsname.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/EndGraf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/EndGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/EndInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/ExpandAfter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Fi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Global.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/If.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/IfCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/IfDim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/IfFalse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/IfNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/IfTrue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Ifx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/IgnoreSpaces.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/ItalicCorrection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Jobname.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Let.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/LongCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Lowercase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Multiply.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/NewIf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/NumberCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Or.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/OverWithDelims.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Prefix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Primitive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Relax.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/RomanNumeral.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Show.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Special.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/StringCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/TeXFontDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/TeXFontFamilyDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/TeXFontShapeDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/TeXFontWeightDeclaration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/TextStyle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/TheCs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Undefined.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Unexpanded.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lib/primitives/Uppercase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/dictionaries/texparserapp-en-GB.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/dictionaries/texparserapp-en-GB.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/test-article/test-article.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/test-article/test-article.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/test-sw/test-sw.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/test-sw/test-sw.tex" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="texparser" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="texparser" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.gitignore" />
+        <option value="$PROJECT_DIR$/.idea/.gitignore" />
+        <option value="$PROJECT_DIR$/.idea/texparser.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/gradle.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules/texparser.test.iml" />
+        <option value="$PROJECT_DIR$/.idea/modules/texparser.main.iml" />
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_2_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_27_1_jre.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_math3_3_6_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_0_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_qual_2_5_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_4_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_4_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_4_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_4_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_1_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules/texparser.app.iml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PVJ4UXwyLzmtBekxxURlTAByJe" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/java/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/java" />
+      <recent name="$PROJECT_DIR$/src/java/lib" />
+      <recent name="$PROJECT_DIR$/src/java/app/com/dickimawbooks/texparserapp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.texparser [build]">
+    <configuration name="TeXParserApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.texparserapp.TeXParserApp" />
+      <module name="texparser.app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.texparserapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="texparser [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="texparser [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="texparser" />
+      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.texparser [build]" />
+        <item itemvalue="Application.TeXParserApp" />
+        <item itemvalue="Gradle.texparser [jar]" />
+        <item itemvalue="Groovy.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="112f43a2-417e-4776-b0ac-00f93a7fa5a7" name="Default Changelist" comment="" />
+      <created>1565953138941</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565953138941</updated>
+      <workItem from="1565953140860" duration="488000" />
+      <workItem from="1565953638949" duration="337000" />
+      <workItem from="1565954095178" duration="1281000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

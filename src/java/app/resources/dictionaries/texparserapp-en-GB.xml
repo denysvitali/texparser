@@ -7,7 +7,7 @@
 <entry key="about.title">About {0}</entry>
 <entry key="about.version">{0} {0} ({1})</entry>
 <entry key="about.licence">License</entry>
-<entry key="about.legal">License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;
+<entry key="about.legal">License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.com.dickimawbooks.texparserlib.html&gt;
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.</entry>
 <entry key="about.translated_by">Translated by {0}</entry>
@@ -46,11 +46,11 @@ There is NO WARRANTY, to the extent permitted by law.</entry>
 <entry key="syntax.output.options">Output Options:</entry>
 <entry key="syntax.out">{0} (or {1}) &lt;directory&gt;	Save output in &lt;directory&gt;, 
 				which must not already exist.</entry>
-<entry key="syntax.latex">{0}				Set the output format to LaTeX (default)</entry>
-<entry key="syntax.html">{0}				Set the output format to HTML</entry>
+<entry key="syntax.com.dickimawbooks.texparserlib.latex">{0}				Set the output format to LaTeX (default)</entry>
+<entry key="syntax.com.dickimawbooks.texparserlib.html">{0}				Set the output format to HTML</entry>
 <entry key="syntax.out.charset">{0} &lt;charset&gt;			Set the character encoding to &lt;charset&gt; for the output files.</entry>
-<entry key="syntax.html.options">HTML Options:</entry>
-<entry key="syntax.head">{0} &lt;html&gt;			Add &lt;head&gt; code to HTML header.</entry>
+<entry key="syntax.com.dickimawbooks.texparserlib.html.options">HTML Options:</entry>
+<entry key="syntax.head">{0} &lt;com.dickimawbooks.texparserlib.html&gt;			Add &lt;head&gt; code to HTML header.</entry>
 <entry key="syntax.bugreport">Report bugs to: {0}</entry>
 <entry key="syntax.homepage">{0} home page: {1}</entry>
 
@@ -113,27 +113,27 @@ There is NO WARRANTY, to the extent permitted by law.</entry>
 <entry key="tex.error.numeric register_expected">Numeric register expected</entry>
 <entry key="tex.error.register_not_numeric">Register ''{0}'' not numeric</entry>
 <entry key="tex.error.register_not_token">Register ''{0}'' not a token register</entry>
-<entry key="tex.error.generic">{0}</entry>
+<entry key="tex.error.com.dickimawbooks.texparserlib.generic">{0}</entry>
 <entry key="tex.error.file.not.found">File ''{0}'' not found.</entry>
 <entry key="tex.error.unexpandable">Can''t expand ''{0}''</entry>
 
 <!--  LaTeX Error Messages -->
 
-<entry key="latex.error.no_alignment">No alignment specifiers found</entry>
-<entry key="latex.error.undefined_counter">No counter ''{0}'' defined</entry>
-<entry key="latex.error.multi_begin_doc">Only one \begin'{'document'}' permitted</entry>
-<entry key="latex.error.no_begin_doc">No \begin'{'document'}' found</entry>
-<entry key="latex.error.multi_cls">Only one \documentclass permitted</entry>
-<entry key="latex.error.missing_key">Missing ''{0}'' key</entry>
-<entry key="latex.error.extra_end">Extra \end'{'{0}'}' found</entry>
-<entry key="latex.error.unaccessible">Unaccessible ''{0}''</entry>
-<entry key="latex.error.defined">''{0}'' already defined</entry>
-<entry key="latex.error.illegal_array_arg_char">Illegal character ''{0}'' in array arg</entry>
-<entry key="latex.error.lonely_item">Lonely \item</entry>
-<entry key="latex.package.error">Package {0} Error: {1}</entry>
-<entry key="latex.class.error">Class {0} Error: {1}</entry>
-<entry key="latex.illegal.argtype">Illegal argument type {0}</entry>
-<entry key="latex.package.not.loaded">Package ''{0}'' has not been loaded</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.error.no_alignment">No alignment specifiers found</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.error.undefined_counter">No counter ''{0}'' defined</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.error.multi_begin_doc">Only one \begin'{'document'}' permitted</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.error.no_begin_doc">No \begin'{'document'}' found</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.error.multi_cls">Only one \documentclass permitted</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.error.missing_key">Missing ''{0}'' key</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.error.extra_end">Extra \end'{'{0}'}' found</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.error.unaccessible">Unaccessible ''{0}''</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.error.defined">''{0}'' already defined</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.error.illegal_array_arg_char">Illegal character ''{0}'' in array arg</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.error.lonely_item">Lonely \item</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.package.error">Package {0} Error: {1}</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.class.error">Class {0} Error: {1}</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.illegal.argtype">Illegal argument type {0}</entry>
+<entry key="com.dickimawbooks.texparserlib.latex.package.not.loaded">Package ''{0}'' has not been loaded</entry>
 
 <!--  bibtex errors -->
 <entry key="bibtex.error.missing_value">Missing value</entry>

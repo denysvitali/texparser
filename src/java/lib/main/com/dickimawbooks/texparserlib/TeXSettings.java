@@ -25,8 +25,8 @@ public class TeXSettings
 {
    private TeXSettings()
    {
-      activeTable = new Hashtable<Integer,ActiveChar>();
-      csTable = new Hashtable<String,ControlSequence>();
+      activeTable = new Hashtable<>();
+      csTable = new Hashtable<>();
    }
 
    public TeXSettings(TeXParser parser)

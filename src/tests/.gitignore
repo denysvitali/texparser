@@ -1,5 +1,5 @@
 output
-*.aux
+*.com.dickimawbooks.texparserlib.aux
 *.bbl
 *.log
 *.out
